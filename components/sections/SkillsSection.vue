@@ -37,7 +37,8 @@
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-3">
                 <div class="w-9 h-9 rounded-lg flex items-center justify-center text-xl" :class="skill.bg">
-                  {{ skill.icon }}
+                  <img v-if="skill.icon.startsWith('/')" :src="skill.icon" :alt="skill.name" class="w-6 h-6 object-contain" />
+                  <span v-else>{{ skill.icon }}</span>
                 </div>
                 <div>
                   <div class="text-white text-sm font-semibold">{{ skill.name }}</div>
@@ -73,24 +74,24 @@ const categories = [
 ]
 
 const skills = [
-  { name: 'Laravel 10',     level: 'Advanced',      icon: '🔴', bg: 'bg-red-500/10',     cat: 'backend' },
-  { name: 'Go Fiber / Gin', level: 'Intermediate',  icon: '🐹', bg: 'bg-cyan-500/10',    cat: 'backend' },
-  { name: 'PHP',            level: 'Advanced',      icon: '🐘', bg: 'bg-violet-500/10',  cat: 'backend' },
-  { name: 'Python',         level: 'Intermediate',  icon: '🐍', bg: 'bg-yellow-500/10',  cat: 'backend' },
-  { name: 'RESTful API',    level: 'Intermediate',  icon: '⚡', bg: 'bg-orange-500/10',  cat: 'backend' },
-  { name: 'Nuxt.js / Vue',  level: 'Beginner',      icon: '💚', bg: 'bg-green-500/10',   cat: 'frontend' },
-  { name: 'Next.js',        level: 'Beginner',      icon: '▲',  bg: 'bg-gray-500/10',    cat: 'frontend' },
-  { name: 'React',          level: 'Beginner',      icon: '⚛️', bg: 'bg-blue-500/10',    cat: 'frontend' },
-  { name: 'JavaScript',     level: 'Intermediate',  icon: '🟨', bg: 'bg-yellow-500/10',  cat: 'frontend' },
-  { name: 'TailwindCSS',    level: 'Intermediate',  icon: '🎨', bg: 'bg-teal-500/10',    cat: 'frontend' },
-  { name: 'AJAX',           level: 'Beginner',      icon: '🔄', bg: 'bg-blue-500/10',    cat: 'frontend' },
-  { name: 'Responsive Web', level: 'Intermediate',  icon: '📱', bg: 'bg-pink-500/10',    cat: 'frontend' },
-  { name: 'PostgreSQL',     level: 'Intermediate',  icon: '🐘', bg: 'bg-blue-500/10',    cat: 'database' },
-  { name: 'MySQL',          level: 'Intermediate',  icon: '🗄️', bg: 'bg-orange-500/10',  cat: 'database' },
-  { name: 'MongoDB',        level: 'Beginner',      icon: '🍃', bg: 'bg-green-500/10',   cat: 'database' },
-  { name: 'Git',            level: 'Intermediate',  icon: '🔀', bg: 'bg-orange-500/10',  cat: 'tools' },
-  { name: 'Docker',         level: 'Beginner',      icon: '🐳', bg: 'bg-blue-500/10',    cat: 'tools' },
-  { name: 'Machine Learning', level: 'Beginner',    icon: '🤖', bg: 'bg-purple-500/10',  cat: 'tools' },
+  { name: 'Laravel 10',     level: 'Advanced',      icon: '/images/logos/laravel-logo.png', bg: 'bg-red-500/10',     cat: 'backend' },
+  { name: 'Go Fiber / Gin', level: 'Intermediate',  icon: '/images/logos/go-logo.png', bg: 'bg-cyan-500/10',    cat: 'backend' },
+  { name: 'PHP',            level: 'Advanced',      icon: '/images/logos/php-logo.png', bg: 'bg-violet-500/10',  cat: 'backend' },
+  { name: 'Python',         level: 'Intermediate',  icon: '/images/logos/python-logo.png', bg: 'bg-yellow-500/10',  cat: 'backend' },
+  { name: 'RESTful API',    level: 'Intermediate',  icon: '/images/logos/rest-api-logo.png', bg: 'bg-orange-500/10',  cat: 'backend' },
+  { name: 'Nuxt.js / Vue',  level: 'Beginner',      icon: '/images/logos/nuxt-logo.png', bg: 'bg-green-500/10',   cat: 'frontend' },
+  { name: 'Next.js',        level: 'Beginner',      icon: '/images/logos/nexjs-logo.svg', bg: 'bg-white',    cat: 'frontend' },
+  { name: 'React',          level: 'Beginner',      icon: '/images/logos/react-logo.png', bg: 'bg-blue-500/10',    cat: 'frontend' },
+  { name: 'JavaScript',     level: 'Intermediate',  icon: '/images/logos/javascript-logo.png', bg: 'bg-yellow-500/10',  cat: 'frontend' },
+  { name: 'TailwindCSS',    level: 'Intermediate',  icon: '/images/logos/tailwindcss-logo.png', bg: 'bg-teal-500/10',    cat: 'frontend' },
+  { name: 'AJAX',           level: 'Beginner',      icon: '/images/logos/ajax-logo.jpg', bg: 'bg-blue-500/10',    cat: 'frontend' },
+  { name: 'Responsive Web', level: 'Intermediate',  icon: '/images/logos/responsive-logo.png', bg: 'bg-pink-500/10',    cat: 'frontend' },
+  { name: 'PostgreSQL',     level: 'Intermediate',  icon: '/images/logos/postgresql-logo.png', bg: 'bg-blue-500/10',    cat: 'database' },
+  { name: 'MySQL',          level: 'Intermediate',  icon: '/images/logos/mysql-logo.png', bg: 'bg-orange-500/10',  cat: 'database' },
+  { name: 'MongoDB',        level: 'Beginner',      icon: '/images/logos/mongodb-logo.png', bg: 'bg-green-500/10',   cat: 'database' },
+  { name: 'Git',            level: 'Intermediate',  icon: '/images/logos/github-logo.png', bg: 'bg-white',  cat: 'tools' },
+  { name: 'Docker',         level: 'Beginner',      icon: '/images/logos/docker-logo.png', bg: 'bg-blue-500/10',    cat: 'tools' },
+  { name: 'Machine Learning', level: 'Beginner',    icon: '/images/logos/scikit-learn-logo.png', bg: 'bg-purple-500/10',  cat: 'tools' },
 ]
 
 const filteredSkills = computed(() =>

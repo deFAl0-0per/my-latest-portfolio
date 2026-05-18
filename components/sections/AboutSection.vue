@@ -12,9 +12,6 @@
           >
             <div class="text-3xl font-black gradient-text mb-1">{{ stat.value }}</div>
             <div class="text-gray-400 text-sm">{{ stat.label }}</div>
-            <div class="mt-3 h-1 rounded-full bg-dark-600">
-              <div class="h-1 rounded-full bg-gradient-to-r from-primary-500 to-teal-400 transition-all duration-1000" :style="`width: ${stat.bar}%`" />
-            </div>
           </div>
 
           <!-- Tech highlight card -->
@@ -91,8 +88,8 @@
 
 <script setup lang="ts">
 const stats = [
-  { value: '2+',  label: 'Years Experience', bar: 60 },
-  { value: '10+', label: 'Projects Built',    bar: 75 },
+  { value: '1+',  label: 'Years Experience',},
+  { value: '8+', label: 'Projects Built',},
   { value: '3',   label: 'Company Clients',   bar: 50 },
   { value: '5+',  label: 'Tech Stacks',       bar: 85 }
 ]
