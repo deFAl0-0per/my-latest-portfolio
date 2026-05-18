@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:raafa-ibra-portfolio.vercel.app)",
+      "Bash(dir \"c:\\\\MyProject\\\\portfolio-raafa-yang-baru\")"
+    ]
+  }
+}
