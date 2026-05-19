@@ -70,7 +70,8 @@ const categories = [
   { id: 'backend',  label: 'Backend' },
   { id: 'frontend', label: 'Frontend' },
   { id: 'database', label: 'Database' },
-  { id: 'tools',    label: 'Tools & Other' }
+  { id: 'tools',    label: 'Tools & Other' },
+  { id: 'others', label: 'Others' }
 ]
 
 const skills = [
@@ -92,6 +93,9 @@ const skills = [
   { name: 'Git',            level: 'Intermediate',  icon: '/images/logos/github-logo.png', bg: 'bg-white',  cat: 'tools' },
   { name: 'Docker',         level: 'Beginner',      icon: '/images/logos/docker-logo.png', bg: 'bg-blue-500/10',    cat: 'tools' },
   { name: 'Machine Learning', level: 'Beginner',    icon: '/images/logos/scikit-learn-logo.png', bg: 'bg-purple-500/10',  cat: 'tools' },
+  { name: 'DevOps',                      level: 'Beginner',     icon: '⚙️', bg: 'bg-gray-500/10',   cat: 'others' },
+  { name: 'Team Collaboration',          level: 'Advanced',     icon: '🤝', bg: 'bg-sky-500/10',    cat: 'others' },
+  { name: 'Enthusiasm for Learning',     level: 'Advanced',     icon: '🚀', bg: 'bg-amber-500/10',  cat: 'others' },
 ]
 
 const filteredSkills = computed(() =>

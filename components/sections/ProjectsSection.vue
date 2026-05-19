@@ -87,18 +87,27 @@ const filters = ['All', 'Freelance', 'Company', 'Personal']
 
 const projects = [
   {
+    title: 'Storefront Brand',
+    icon: '🛍️',
+    iconBg: 'bg-pink-500/10',
+    period: 'March 2026 — Now',
+    type: 'Freelance',
+    filter: 'Freelance',
+    description: 'Full-stack brand storefront for YAA merchant within the Beyond Borders Singapore ecosystem. White-label e-commerce solution with Go Gin backend, Next.js SSR frontend, MinIO storage, and EasyParcel shipping integration.',
+    tech: ['Go Gin', 'Next.js', 'PostgreSQL', 'MinIO', 'EasyParcel', 'SSR']
+  },
+  {
     title: 'Beyond Borders WMS',
     icon: '🏭',
     iconBg: 'bg-blue-500/10',
     period: 'March 2026 — Now',
     type: 'Freelance',
     filter: 'Freelance',
-    link: 'https://wms.beyondborders.sg',
     description: 'Full-stack Warehouse Management System for a Singapore e-commerce client. Integrates Shopee, Lazada, Shopify, EasyParcel, and HitPay in one dashboard.',
     tech: ['Go Gin', 'Next.js', 'PostgreSQL', 'MinIO', 'WebSocket']
   },
   {
-    title: 'Beyond Borders Landing',
+    title: 'MissMass Landing',
     icon: '🌏',
     iconBg: 'bg-teal-500/10',
     period: 'March 2026 — Now',

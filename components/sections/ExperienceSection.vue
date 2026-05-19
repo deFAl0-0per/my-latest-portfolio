@@ -78,12 +78,27 @@
 <script setup lang="ts">
 const experiences = [
   {
+    title: 'Storefront Brand',
+    company: 'Freelance Remote',
+    type: 'Full-Stack Web',
+    period: 'March 2026 — Now',
+    location: 'Remote',
+    points: [
+      'Developed a dedicated brand storefront for YAA — a merchant in the Beyond Borders Singapore ecosystem — as a fully independent full-stack e-commerce web application.',
+      'Engineered the backend using Go Gin as the REST API framework and PostgreSQL for product catalog, order management, customer data, and transactions.',
+      'Implemented MinIO as S3-compatible object storage for managing product images and media assets at scale.',
+      'Integrated EasyParcel for automated shipping rate calculation, courier comparison, and real-time shipment tracking at checkout.',
+      'Built a responsive, real-time frontend using Next.js with SSR for fast page loads across desktop and mobile.',
+      'Designed as a white-label solution within the Beyond Borders ecosystem — shared backend infrastructure with independent branded storefront.'
+    ],
+    tech: ['Go Gin', 'Next.js', 'PostgreSQL', 'MinIO', 'EasyParcel', 'SSR', 'REST API']
+  },
+  {
     title: 'Beyond Borders WMS Dashboard',
     company: 'Freelance Remote',
     type: 'Full-Stack Web',
     period: 'March 2026 — Now',
     location: 'Remote',
-    link: 'https://wms.beyondborders.sg',
     points: [
       'Developed a comprehensive Warehouse Management System with Go Gin backend and Next.js frontend.',
       'Integrated Shopee, Lazada, and Shopify for centralized order synchronization and inventory management.',
@@ -93,9 +108,9 @@ const experiences = [
     tech: ['Go Gin', 'Next.js', 'PostgreSQL', 'MinIO', 'WebSocket', 'Shopee API', 'HitPay']
   },
   {
-    title: 'Beyond Borders WMS Landing Page',
+    title: 'MissMass Landing Page',
     company: 'Freelance Remote',
-    type: 'Front-End Web',
+    type: 'Full-Stack Web',
     period: 'March 2026 — Now',
     location: 'Remote',
     link: 'https://beyondborders.sg',
